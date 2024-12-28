@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="container-fluid text-center">
+      <div class="row "> 
+          <div class="col-4">
+              <a href="main.html" class="btn btn-success w-100"><strong>HOME</strong></a>
+          </div>
+          <div class="col-4">
+              <a href="workWithUs.html" class="btn btn-light w-100"><strong>WORK WITH US</strong></a>
+          </div>
+          <div class="col-4">
+              <a href="ourCountry.html" class="btn btn-danger w-100"><strong>Our Country</strong></a>
+          </div>
+      </div>
+      <h1 class="bg-primary font-monospace text-center fw-bold w-100">DO YOU WANT TO WORK WITH US?</h1>
+  </header>
+  <article class="container">
+    <h2>Types of jobs in this company</h2>
+    <div class="accordion accordion-flush row" id="accordionFlushExample">
+      <div class="col-3 accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed bg-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Office
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"></div> In the office you will be in charge of cleaning the material used, cutlery,
+          plates and the kitchen tools. <img src="../images/Office.jpg" alt="Office">
+        </div>
+      </div>
+      <div class="accordion-item col-3">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Cook
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">You will be the coocke guied by the chef, the great team of the kitchen is very
+            efficient, you will be efficient. <img src="../images/cocina.jpg" alt="kitchen"></div>
+        </div>
+      </div>
+      <div class="accordion-item col-3">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed bg-success" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Waiter
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Being the waiter, start the contact with the client, you will be the company
+            image. <img src="../images/camarero.jpg" alt="Waiter"></div>
+        </div>
+      </div>
+      <div class="accordion-item col-3">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Meitre
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">As meitre you should have more experience with it, you will have to organise
+            everyone and keep everything all rigth. <img src="../images/maitre.jpeg" alt="Maitre"></div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" class="container">
+      <div class="mb-3">
+        <label for="name" class="form-label fw-bold">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="Surname" class="form-label fw-bold">Surname:</label>
+        <input type="text" class="form-control" id="Surname" placeholder="Enter Surname" name="Surname">
+      </div>
+      <div class="mb-3">
+        <h5>Select your gender:</h5>
+        <input type="checkbox" class="form-check-input ms-2" id="Male" name="gender" value="Male">
+        <label class="form-check-label" for="Male">Male</label>
+        <input type="checkbox" class="form-check-input" id="Female" name="gender" value="Female">
+        <label class="form-check-label" for="Female">Female</label>
+        <input type="checkbox" class="form-check-input" id="Other" name="gender" value="Other">
+        <label class="form-check-label" for="Other">Other</label>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label fw-bold">Email:</label>
+        <div class="input-group">
+          <span class="input-group-text bg-light p-2">@</span>
+          <input type="email" class="form-control" id="email" placeholder="Your email" name="email" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="telephone" class="form-label">Numer of telephone:</label>
+        <div class="input-group">
+          <span class="input-group-text bg-light p-2">+34</span>
+          <input type="tel" class="form-control" id="telephone" placeholder="Enter number" name="telephone" required>
+        </div>
+
+      </div>
+      <label for="charge" class="form-label fw-bold">For what job are you aplying?</label>
+      <select class="form-select" id="charge" name="charge">
+        <option value="Nothing" selected>Select</option>
+        <option value="Office">Office</option>
+        <option value="Waiter">Waiter</option>
+        <option value="Chef">Chef</option>
+        <option value="Maitre">Meitre</option>
+      </select>
+      <label for="comment" class="fw-bold mt-3">Your most valuable characteristics:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+      <div class="mb-3 mt-2">
+        <label for="characteristics" class="form-label fw-bold">Send your curriculum vitae</label>
+        <input class="form-control" type="file" id="characteristics">
+      </div>
+      <div class="mb-4">
+        <input class="me-2" type="checkbox" required>By sending it, you must accept the <a class="text-decoration-none"
+          href="https://edpb.europa.eu/system/files/2022-01/edpb_guidelines_012022_right-of-access_0.pdf">use of
+          data</a>.
+      </div>
+      <a class="btn btn-secondary" href="main.html" role="button">Home</a>
+      <button type="reset" class="btn btn-success">Clear</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+  <address class="row m-2 mt-3">
+    <span class="h3">This is the kind of job you could get involved in.</span> 
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img src="../images/1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="disco">
+
+      <img src="../images/4.jpg" class="w-100 shadow-1-strong rounded mb-4 h-50" alt="restaurant" >
+    </div>
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img src="../images/2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="disco">
+
+      <img src="../images/5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="restaurant">
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img src="../images/3.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="disco">
+
+      <img src="../images/6.jpg" class="w-100 shadow-1-strong rounded mb-4 h-50" alt="restaurant">
+    </div>
+
+  </address>
+  
+</body>
+
+</html>

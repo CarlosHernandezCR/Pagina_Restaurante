@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/first-page.css">
+</head>
+
+<body>
+    <nav class="row text-center">
+        <div class="col-4 bg-success"><a href="#TOP"><strong>HOME</strong></a></div>
+        <div class="col-4 bg-white"><a href="workWithUs.html"><strong>WORK WITH US</strong></a></div>
+        <div class="col-4 bg-danger"><a href="OurCountry.html"><strong>Our Country</strong></a></div>
+        <div class="bar">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+    </nav>
+    <header class="mt-4 w-100">
+        <div class="topHeader">
+            <a class="text-white text-decoration-none" href="main.html"><img src="../images/SukkiniLogo.png"
+                    alt="logoSukkini"> <span class="h1 ps-2">RISTORANTE SUKINNI</span> </a>
+            <span class="h6 small ps-1 ">Madrid Valencia Barcelona </span>
+        </div>
+        <div class="d-sm-none d-md-block">
+            <div class="subHeader row text-center w-100">
+                <span class="col-4 p-2">Ristorante & Disco</span>
+                <span class="col-4 p-2">Fastfood during the day, disco at night</span> 
+                <span class="col-4 p-2">The real Italian food</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+    <article class="m-3 float-start col-md-6 col-sm-11" id="text">
+        <h2>History of the restaurant Italian food</h2>
+        From Bolognese sauce to lasagna to parmigiana, it is virtually impossible to imagine Italian cuisine without
+        the tomato. Yet as with chili peppers in India, potatoes in Ireland, and peanuts in Southeast Asia, Italians
+        have only had tomatoes for a few hundred years. Before the Columbian Exchange, no one in Italy had heard of
+        this fruit. By learning how the tomato became a part of it, you can understand Italian cuisine’s truly
+        international character.
+        Lifted From Latin America
+        By the 18th century, Italians had begun experimenting with tomato conservation methods. By boiling them and
+        then sealing them into tight containers, they could keep the fruits in good condition throughout the year.
+        Tomatoes truly hit their stride in the 19th century, when Margherita pizza, pasta al pomodoro, and other
+        staples of modern Italian cuisine came into vogue. Just as these dishes were becoming popular, Italy began
+        its process of unification, helping to spread them and other cooking techniques more evenly across the
+        country. It was also at this time that the Diaspora started, with Italians traveling to Brazil, Argentina,
+        the United States, and other countries. This established Italy’s global reputation for cooking delicious
+        tomato dishes.
+        <span class="blockquote-footer">From ItalyHistory.com</span>
+        <h2 class="mt-3">About the disco</h2>
+        When night falls, the restaurant closes and the party starts. At night we transform the restaurant into a
+        discotheque. With VIP zones, dance floor and bar, Sukinni in discotheque mode is the best party ever for
+        you. Take a shisha and your drink with you to your table and let's chill or go to the dance floor and have
+        fun all night long. With the huge illumination and the best speakers, the party is insured.
+    </article>
+    <aside class="m-3 ps-5 float-lg-end float-md-end float-sm-none">
+        <h2>Our country</h2>
+        <div class='img'>
+            <img src='../images/ItalianFoodMap.jpg' alt="italyMap">
+            <p class="text-center text-white w-100">The different types of food of our country</p>
+        </div>
+        <div class="d-flex justify-content-end mt-4 me-2 pe-5">
+            <button type="button" class="btn btn-outline-danger btn-success me-4" data-bs-toggle="tooltip"
+                title="VIVA L'ITALIA" onclick="window.location.href='OurCountry.html#North'">NORTH</button>
+            <button type="button" class="btn btn-outline-danger btn-light me-4" data-bs-toggle="tooltip"
+                title="MOLTE GRAZIE" onclick="window.location.href='OurCountry.html#Center'">CENTER</button>
+            <button type="button" class="btn btn-outline-danger btn-danger me-4" data-bs-toggle="tooltip"
+                title="BUON VINO" onclick="window.location.href='OurCountry.html#South'">
+                <span class="text-white">SOUTH</span>
+            </button>
+        </div>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+    </aside></div>
+    <address class="d-none d-md-block" id="address">
+        <table >
+            <tr>
+                <th colspan="3" class="font-monospace text-center" id="italyBorder">Where to locate us</th>
+            </tr>
+            <tr>
+                <th class="border-success">Madrid</th>
+                <th class="border-white">Barcelona</th>
+                <th class="border-danger">Valencia</th>
+            </tr>
+            <tr>
+                <td class="border-success">Castellanda 34, 28001</td>
+                <td class="border-white">Avenida Gaudi 32,08025</td>
+                <td class="border-danger">Calle de Xàtiva 26, 46002</td>
+            </tr>
+            <tr>
+                <td class="border-success">91573573</td>
+                <td class="border-white">91894894</td>
+                <td class="border-danger">91569569</td>
+            </tr>
+            <tr>
+                <td class="border-success p-1"> <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319.21770608647034!2d-3.6880453296655675!3d40.43259896649207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229ca7e9833c1%3A0xd9303abeeb205285!2sTOT%C3%93%20Madrid!5e0!3m2!1ses!2ses!4v1735416077410!5m2!1ses!2ses" 
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                <td class="border-light p-1"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.4955446640224!2d2.174480175023092!3d41.4067604184393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2db4b1f16eb%3A0xfd11ba01d0bab933!2sJijonenca%20gelats%20i%20caf%C3%A8s!5e0!3m2!1ses!2ses!4v1670872408965!5m2!1ses!2ses"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                <td class="border-danger p-1"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.0889726636046!2d-0.375973137217779!3d39.46731865947848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4ade9b2e33%3A0xb30a7987a5324079!2sMcDonald&#39;s!5e0!3m2!1ses!2ses!4v1670872467370!5m2!1ses!2ses"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+            </tr>
+        </table>
+    </address>
+    <section class="row w-100 text-center border-top border-bottom border-3 border-light">
+        <ul class="col-sm-4 mt-3">
+            <li>
+                <h2>LINKS</h2>
+            </li>
+            <li><a href="#TOP">HOME</a></li>
+            <li><a href="workWithUs.html">WORK WITH US</a></li>
+            <li><a href="#address">CONTACT</a></li>
+        </ul>
+        <ul class="col-sm-4 mt-3">
+            <li>
+                <h2>INFORMATION</h2>
+            </li>
+            <li><a href="#text">Our Country Story</a></li>
+            <li><a href="#aside">Food Variety</a></li>
+            <li><a href="#address">Locations</a></li>
+        </ul>
+        <ul class="col-sm-4 mt-3">
+            <li>
+                <h2>FOLLOW US</h2>
+            </li>
+            <li><a href="https://www.youtube.com/@citalia"><img src="../images/youtube.webp"
+                        alt="YoutubeLink">Youtube</a></li>
+            <li><a href="https://www.facebook.com/italianfood.top.7"><img src="../images/facebook.webp"
+                        alt="facebookLink">Facebook</a></li>
+            <li><a href="https://www.instagram.com/italian_food/"><img src="../images/instagram.webp"
+                        alt="instagramLink">Instagram</a></li>
+        </ul>
+    </section>
+    <footer class="mt-3">
+        <div class="alert alert-dark alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Warning!</strong> By being on this page you are accepting the use of Cookies.
+        </div>
+        <ul class="row text-center w-100">
+            <li class="col-sm-3"><a
+                    href="https://upcommons.upc.edu/bitstream/handle/2117/360444/memoriaTFMmeritxellV3.pdf?sequence=2&isAllowed=y">Cookies
+                    configuration</a></li>
+            <li class="col-sm-3"><a href="https://www.lipsum.com/privacy.pdf">Privacy center</a></li>
+            <li class="col-sm-3"><a href="../documents/privacypolicy.pdf">Privacy Warning</a></li>
+            <li class="col-sm-3"><a href="../documents/terms.pdf">Terms and conditions</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
