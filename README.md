@@ -44,13 +44,13 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
    
 2. Descargar Bootstrap: Utiliza el siguiente enlace para acceder directamente a los archivos de Bootstrap:
 
-[Descargar Bootstrap](getbootstrap.com)
+   [Descargar Bootstrap](getbootstrap.com)
 
 3. Insertar los archivos en las carpetas correspondientes:
 
-  -Extrae los archivos descargados de Bootstrap.
-  -Coloca los archivos css en la carpeta css del proyecto.
-  -Coloca los archivos js en la carpeta js del proyecto.
+   - Extrae los archivos descargados de Bootstrap.
+   - Coloca los archivos css en la carpeta css del proyecto.
+   - Coloca los archivos js en la carpeta js del proyecto.
   
 4. Verificar: Una vez que hayas colocado los archivos en las carpetas adecuadas, abre los archivos HTML en tu navegador para     ver el proyecto en acción.
 
