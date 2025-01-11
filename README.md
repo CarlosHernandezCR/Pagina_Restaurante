@@ -41,9 +41,11 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/CarlosHernandezCR/Pagina_Restaurante.git
-2. Descargar Bootstrap: Dirígete a W3Schools Bootstrap y descarga la última versión de Bootstrap, o simplemente utiliza el siguiente enlace para acceder directamente a los archivos de Bootstrap:
+   
+2. Descargar Bootstrap: Utiliza el siguiente enlace para acceder directamente a los archivos de Bootstrap:
 
 [Descargar Bootstrap](getbootstrap.com)
+
 3. Insertar los archivos en las carpetas correspondientes:
 
   -Extrae los archivos descargados de Bootstrap.
